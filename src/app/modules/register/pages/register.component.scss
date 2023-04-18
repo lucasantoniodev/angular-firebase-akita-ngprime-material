@@ -1,0 +1,91 @@
+p-card {
+  width: 448px;
+  height: 556px;
+
+  .p-component {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    box-shadow: none;
+    height: 100%;
+  }
+
+  .content {
+    padding: 48px 40px !important;
+
+    .sHeader {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        padding: 0;
+        margin: 16px 0 0 0;
+        font-weight: 500;
+      }
+
+      p {
+        padding: 0;
+        margin: 7px 0 0 0;
+      }
+    }
+
+    .sContent {
+      font-size: 13px;
+      margin-top: 40px;
+
+
+      input {
+        height: 58px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid rgb(206, 206, 206);
+      }
+
+      .information {
+        padding: 0;
+        margin: 0;
+      }
+
+      .forgotEmail {
+        margin-bottom: 40px;
+        font-size: 16px;
+        margin-top: .5rem;
+        padding: 0;
+        font-weight: 500;
+      }
+
+      .learnMore {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .buttons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .createAccount {
+          font-size: 14px;
+          padding: 0;
+          font-weight: 500;
+        }
+
+        .nextButton {
+          background-color: rgb(26, 115, 232);
+          width: 79.17px;
+          height: 40px;
+          border-radius: 6px;
+
+          font-size: 14px;
+          font-weight: 500;
+
+        }
+      }
+    }
+  }
+
+
+}

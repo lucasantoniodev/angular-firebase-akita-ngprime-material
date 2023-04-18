@@ -1,0 +1,31 @@
+<div class="content">
+  <section class="sHeader">
+    <img src="../../../../assets/imgs/google.svg" alt="" />
+    <h1>Sign In</h1>
+    <p>to continue to YouTube</p>
+  </section>
+  <section class="sContent">
+    <form [formGroup]="form" (ngSubmit)="form.valid && nextButton()">
+      <span class="p-float-label">
+        <input
+          pInputText
+          id="username"
+          formControlName="username"
+          placeholder="Email or phone"
+        />
+        <label htmlFor="username">Email or phone</label>
+      </span>
+      <p-button styleClass="p-button-link forgotEmail">Forgot email?</p-button>
+      <p class="information">
+        Not your computer? Use Guest mode to sign in privately.
+      </p>
+      <p-button styleClass="p-button-link learnMore">Learn more</p-button>
+      <div class="buttons">
+        <p-button styleClass="p-button-link createAccount"
+          >Create account</p-button
+        >
+        <p-button type="submit" label="Next" styleClass="nextButton"></p-button>
+      </div>
+    </form>
+  </section>
+</div>

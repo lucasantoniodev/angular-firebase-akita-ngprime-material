@@ -1,0 +1,10 @@
+<div class="container">
+  <p-card>
+    <div *ngIf="email; else login">
+      <app-password-form [email]="email"></app-password-form>
+    </div>
+    <ng-template #login>
+      <app-email-form (emailEmitter)="getEmail($event)"></app-email-form>
+    </ng-template>
+  </p-card>
+</div>
